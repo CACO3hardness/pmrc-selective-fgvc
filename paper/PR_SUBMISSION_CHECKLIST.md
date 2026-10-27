@@ -27,11 +27,11 @@
 
 ## Final production checks
 
-- [x] Compile `main_pr.tex` with the supplied `elsarticle.cls` and
-      `elsarticle-num.bst`.
-- [x] Confirm the manuscript is 28 pages after review formatting.
-- [x] Check every figure and table at final printed width.
-- [ ] Verify that no table contains vertical rules or shading.
+- [ ] Recompile `main_pr.tex` after the final metadata and repository updates
+      with the supplied `elsarticle.cls` and `elsarticle-num.bst`.
+- [ ] Confirm the recompiled manuscript is within the 20-35 page range.
+- [ ] Check every figure and table at final printed width.
+- [x] Verify that no table contains vertical rules or shading.
 - [ ] Submit `Highlights_PR.txt` as an editable file with a filename containing
       "Highlights".
 - [ ] Upload figures separately and retain captions in the manuscript.
