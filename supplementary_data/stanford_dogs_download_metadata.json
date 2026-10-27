@@ -1,0 +1,17 @@
+{
+  "train-00000-of-00002.parquet": {
+    "bytes": 262715657,
+    "sha256": "61442ff2886c14bf79c5ee42c85bbab50f01553301e0258cd9be6de23540423c",
+    "source": "https://huggingface.co/datasets/amaye15/stanford-dogs/resolve/main/data/train-00000-of-00002.parquet"
+  },
+  "train-00001-of-00002.parquet": {
+    "bytes": 260293901,
+    "sha256": "9770544a90ae854d5ff1c85551a6badab352ab508962fc1ae61a8c45d4361f55",
+    "source": "https://huggingface.co/datasets/amaye15/stanford-dogs/resolve/main/data/train-00001-of-00002.parquet"
+  },
+  "test-00000-of-00001.parquet": {
+    "bytes": 223490930,
+    "sha256": "431566521914284bfee65f05e6b60746af188c764c6389e2505ec2094025447f",
+    "source": "https://huggingface.co/datasets/amaye15/stanford-dogs/resolve/main/data/test-00000-of-00001.parquet"
+  }
+}

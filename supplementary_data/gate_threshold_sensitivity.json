@@ -1,0 +1,153 @@
+{
+  "thresholds": [
+    0.4,
+    0.45,
+    0.475,
+    0.5,
+    0.525,
+    0.55,
+    0.6
+  ],
+  "results": [
+    {
+      "scope": "original_test_split",
+      "threshold": 0.4,
+      "n": 40,
+      "pmrc_selected": 39,
+      "mean_gain_pct": 9.652099015353146,
+      "nonregression_rate": 0.9,
+      "worse_count": 4,
+      "minimum_gain_pct": -2.955233168608365
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.45,
+      "n": 40,
+      "pmrc_selected": 35,
+      "mean_gain_pct": 9.748343153065637,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.475,
+      "n": 40,
+      "pmrc_selected": 35,
+      "mean_gain_pct": 9.748343153065637,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.5,
+      "n": 40,
+      "pmrc_selected": 34,
+      "mean_gain_pct": 9.697979632486426,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.525,
+      "n": 40,
+      "pmrc_selected": 34,
+      "mean_gain_pct": 9.697979632486426,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.55,
+      "n": 40,
+      "pmrc_selected": 34,
+      "mean_gain_pct": 9.697979632486426,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "original_test_split",
+      "threshold": 0.6,
+      "n": 40,
+      "pmrc_selected": 33,
+      "mean_gain_pct": 9.580949110541138,
+      "nonregression_rate": 1.0,
+      "worse_count": 0,
+      "minimum_gain_pct": 0.0
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.4,
+      "n": 400,
+      "pmrc_selected": 385,
+      "mean_gain_pct": 8.197680860933762,
+      "nonregression_rate": 0.84,
+      "worse_count": 64,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.45,
+      "n": 400,
+      "pmrc_selected": 365,
+      "mean_gain_pct": 8.317075062491607,
+      "nonregression_rate": 0.8775,
+      "worse_count": 49,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.475,
+      "n": 400,
+      "pmrc_selected": 357,
+      "mean_gain_pct": 8.398011876067754,
+      "nonregression_rate": 0.8975,
+      "worse_count": 41,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.5,
+      "n": 400,
+      "pmrc_selected": 350,
+      "mean_gain_pct": 8.418231993674413,
+      "nonregression_rate": 0.9075,
+      "worse_count": 37,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.525,
+      "n": 400,
+      "pmrc_selected": 345,
+      "mean_gain_pct": 8.40207912551972,
+      "nonregression_rate": 0.915,
+      "worse_count": 34,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.55,
+      "n": 400,
+      "pmrc_selected": 339,
+      "mean_gain_pct": 8.355646163237672,
+      "nonregression_rate": 0.92,
+      "worse_count": 32,
+      "minimum_gain_pct": -12.482875384890733
+    },
+    {
+      "scope": "heldout_class",
+      "threshold": 0.6,
+      "n": 400,
+      "pmrc_selected": 330,
+      "mean_gain_pct": 8.260125740825602,
+      "nonregression_rate": 0.9225,
+      "worse_count": 31,
+      "minimum_gain_pct": -12.482875384890733
+    }
+  ]
+}

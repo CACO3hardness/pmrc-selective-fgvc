@@ -1,0 +1,97 @@
+{
+  "Controlled 28-model matrix": {
+    "n": 28,
+    "methods": {
+      "temperature_scaling_aurc": {
+        "label": "Temperature",
+        "available": 28,
+        "mean_aurc": 0.15469035720451516,
+        "pmrc_lower": 28,
+        "exceptions": []
+      },
+      "pnorm_aurc": {
+        "label": "MaxLogit-pNorm",
+        "available": 28,
+        "mean_aurc": 0.1516855517518008,
+        "pmrc_lower": 27,
+        "exceptions": [
+          "elr_resnet50_cub_clean_seed0"
+        ]
+      },
+      "knn_agreement_aurc": {
+        "label": "KNN agreement",
+        "available": 28,
+        "mean_aurc": 0.15532408263409758,
+        "pmrc_lower": 27,
+        "exceptions": [
+          "ce_resnet50_cub_symmetric40_seed0"
+        ]
+      },
+      "embedding_trust_aurc": {
+        "label": "Trust Score",
+        "available": 28,
+        "mean_aurc": 0.17343704864051304,
+        "pmrc_lower": 28,
+        "exceptions": []
+      }
+    }
+  },
+  "WebFG real web noise": {
+    "n": 12,
+    "methods": {
+      "temperature_scaling_aurc": {
+        "label": "Temperature",
+        "available": 12,
+        "mean_aurc": 0.08892310668680341,
+        "pmrc_lower": 9,
+        "exceptions": [
+          "elr_resnet50_webfg_bird_seed0",
+          "elr_resnet50_webfg_bird_seed1",
+          "elr_resnet50_webfg_bird_seed3"
+        ]
+      },
+      "pnorm_aurc": {
+        "label": "MaxLogit-pNorm",
+        "available": 12,
+        "mean_aurc": 0.08766840722283736,
+        "pmrc_lower": 5,
+        "exceptions": [
+          "elr_resnet50_webfg_bird_seed0",
+          "elr_resnet50_webfg_bird_seed1",
+          "elr_resnet50_webfg_bird_seed2",
+          "elr_resnet50_webfg_bird_seed3",
+          "elr_resnet50_webfg_bird_seed4",
+          "elr_resnet50_webfg_bird_seed5",
+          "elr_resnet50_webfg_car_seed1"
+        ]
+      },
+      "knn_agreement_aurc": {
+        "label": "KNN agreement",
+        "available": 12,
+        "mean_aurc": 0.09328083473775306,
+        "pmrc_lower": 9,
+        "exceptions": [
+          "elr_resnet50_webfg_aircraft_seed1",
+          "elr_resnet50_webfg_car_seed0",
+          "elr_resnet50_webfg_car_seed1"
+        ]
+      },
+      "embedding_trust_aurc": {
+        "label": "Trust Score",
+        "available": 12,
+        "mean_aurc": 0.08586991208220307,
+        "pmrc_lower": 4,
+        "exceptions": [
+          "elr_resnet50_webfg_aircraft_seed1",
+          "elr_resnet50_webfg_bird_seed0",
+          "elr_resnet50_webfg_bird_seed1",
+          "elr_resnet50_webfg_bird_seed2",
+          "elr_resnet50_webfg_bird_seed3",
+          "elr_resnet50_webfg_bird_seed4",
+          "elr_resnet50_webfg_bird_seed5",
+          "elr_resnet50_webfg_car_seed0"
+        ]
+      }
+    }
+  }
+}

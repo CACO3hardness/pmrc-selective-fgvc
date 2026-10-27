@@ -1,0 +1,78 @@
+{
+  "summary": {
+    "setting": "Stanford Dogs, 120 classes, 40% semantic-neighbor noise",
+    "gate_threshold": 0.5,
+    "completed_seeds": [
+      0,
+      1,
+      2
+    ],
+    "mean_msp_aurc": 0.08523004521717847,
+    "mean_pmrc_aurc": 0.06096159414579302,
+    "mean_relative_gain_pct": 28.403289485763437,
+    "seed_standard_deviation_pct": 1.8338906056923239,
+    "positive_seeds": 3,
+    "pmrc_selected": 3,
+    "all_baseline_wins": 3,
+    "gate_direction_matches": 3
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "test_accuracy": 0.7742144476838354,
+      "msp_aurc": 0.08607369683856259,
+      "pmrc_aurc": 0.06142658424080327,
+      "relative_gain_pct": 28.634894866879886,
+      "delta_aurc_ci95_low": -0.0286502279898361,
+      "delta_aurc_ci95_high": -0.020786744157846374,
+      "msp_risk90": 0.18427208925679323,
+      "pmrc_risk90": 0.16429728270649632,
+      "validation_gate_auc": 0.8526001528982683,
+      "test_within_msp_auc": 0.7983044699518032,
+      "gate_selected_method": "pmrc",
+      "gated_aurc": 0.06142658424080327,
+      "temperature_aurc": 0.08013472836421286,
+      "pnorm_aurc": 0.08103656656404024,
+      "knn_aurc": 0.07442807900390973,
+      "trust_aurc": 0.12252219441050964
+    },
+    {
+      "seed": 1,
+      "test_accuracy": 0.7750242954324587,
+      "msp_aurc": 0.07992550592685929,
+      "pmrc_aurc": 0.0587735421725362,
+      "relative_gain_pct": 26.464597889038686,
+      "delta_aurc_ci95_low": -0.02441315493144096,
+      "delta_aurc_ci95_high": -0.01783089909047819,
+      "msp_risk90": 0.18193269749865035,
+      "pmrc_risk90": 0.16069821846319957,
+      "validation_gate_auc": 0.7854283394908245,
+      "test_within_msp_auc": 0.7971216098876583,
+      "gate_selected_method": "pmrc",
+      "gated_aurc": 0.0587735421725362,
+      "temperature_aurc": 0.0759840855619513,
+      "pnorm_aurc": 0.07678803796872213,
+      "knn_aurc": 0.07117736132599588,
+      "trust_aurc": 0.12516321085312387
+    },
+    {
+      "seed": 2,
+      "test_accuracy": 0.7664399092970522,
+      "msp_aurc": 0.08969093288611356,
+      "pmrc_aurc": 0.0626846560240396,
+      "relative_gain_pct": 30.110375701371733,
+      "delta_aurc_ci95_low": -0.03167524915148925,
+      "delta_aurc_ci95_high": -0.02298504348184048,
+      "msp_risk90": 0.1912902645312219,
+      "pmrc_risk90": 0.1700557854957711,
+      "validation_gate_auc": 0.8161927820900028,
+      "test_within_msp_auc": 0.81603759483109,
+      "gate_selected_method": "pmrc",
+      "gated_aurc": 0.0626846560240396,
+      "temperature_aurc": 0.08425525793908745,
+      "pnorm_aurc": 0.084830133230905,
+      "knn_aurc": 0.07724559021367444,
+      "trust_aurc": 0.12351745036904274
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "config_fields_compared": [
+    "amp",
+    "amp_dtype",
+    "batch_size",
+    "dataset",
+    "elr_beta",
+    "elr_lambda",
+    "epochs",
+    "freeze_stages",
+    "grad_clip",
+    "image_size",
+    "label_smoothing",
+    "lr",
+    "manifest",
+    "method",
+    "model",
+    "noise_csv",
+    "num_workers",
+    "output_dir",
+    "pretrained",
+    "resume",
+    "root",
+    "weight_decay"
+  ],
+  "ignored_fields": [
+    "run_name",
+    "seed"
+  ],
+  "runs": [
+    {
+      "seed": 0,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    },
+    {
+      "seed": 1,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    },
+    {
+      "seed": 2,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    },
+    {
+      "seed": 3,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    },
+    {
+      "seed": 4,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    },
+    {
+      "seed": 5,
+      "config_exists": true,
+      "config_equal_except_seed_and_run_name": true,
+      "test_labels_available": true,
+      "test_labels_equal": true
+    }
+  ],
+  "failures": [],
+  "status": "pass"
+}

@@ -1,0 +1,5 @@
+Formalizes a fixed-accuracy selective reliability gap under label noise
+Adds prototype and two-view evidence without changing predictions
+Improves selective ordering across three objectives and two backbones
+Uses a calibration-only gate to activate PMRC or return to MSP
+Validates fallback behavior on WebFG and closed-set limits on CUB

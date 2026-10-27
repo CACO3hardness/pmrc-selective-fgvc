@@ -1,0 +1,22 @@
+dataset: cub200
+root: data/CUB_200_2011_256
+manifest: data/manifests/cub_seed0.json
+noise_csv: null
+output_dir: runs
+run_name: ce_resnet50_cub_clean_seed0_1epoch
+
+method: ce
+model: resnet50
+pretrained: true
+freeze_stages: 0
+image_size: 224
+batch_size: 32
+num_workers: 0
+epochs: 1
+lr: 0.0001
+weight_decay: 0.0001
+label_smoothing: 0.0
+grad_clip: 1.0
+amp: true
+amp_dtype: bf16
+seed: 0

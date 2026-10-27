@@ -1,0 +1,8 @@
+.venv/
+.torch_cache/
+data/
+checkpoints/
+runs/
+*.whl
+__pycache__/
+*.pyc

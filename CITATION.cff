@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+title: "Post-hoc Prototype-Margin Reliability Calibration for Closed-Set Selective Fine-Grained Recognition under Label Noise"
+authors:
+  - family-names: "Zhao"
+    given-names: "Xianning"
+    affiliation: "School of Information Science and Engineering, Lanzhou University"
+    email: "zhxianning2025@lzu.edu.cn"
+  - family-names: "Tang"
+    given-names: "Haoyuan"
+    affiliation: "School of Information Science and Engineering, Lanzhou University"
+  - family-names: "Qiao"
+    given-names: "Liang"
+    affiliation: "School of Information Science and Engineering, Lanzhou University"
+type: software
+repository-code: "https://github.com/CACO3hardness/pmrc-selective-fgvc"
+abstract: "Reference implementation and experiment summaries for PMRC, a post-hoc selective reliability calibration method for frozen noisy-label classifiers."
+version: "1.0.0"
+date-released: "2026-10-27"

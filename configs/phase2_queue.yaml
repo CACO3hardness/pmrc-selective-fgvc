@@ -1,0 +1,18 @@
+tasks:
+  - dataset: cub
+    seeds: [0, 1, 2]
+    noises:
+      - {kind: semantic, rate: 0.2}
+      - {kind: semantic, rate: 0.4}
+      - {kind: symmetric, rate: 0.4}
+  - dataset: aircraft
+    seeds: [0, 1, 2]
+    noises:
+      - {kind: semantic, rate: 0.2}
+      - {kind: semantic, rate: 0.4}
+  - dataset: flowers102
+    seeds: [0, 1, 2]
+    noises:
+      - {kind: semantic, rate: 0.2}
+      - {kind: semantic, rate: 0.4}
+
