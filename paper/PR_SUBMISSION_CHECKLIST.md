@@ -27,14 +27,14 @@
 
 ## Final production checks
 
-- [ ] Recompile `main_pr.tex` after the final metadata and repository updates
+- [x] Recompile `main_pr.tex` after the final metadata and repository updates
       with the supplied `elsarticle.cls` and `elsarticle-num.bst`.
-- [ ] Confirm the recompiled manuscript is within the 20-35 page range.
-- [ ] Check every figure and table at final printed width.
+- [x] Confirm the recompiled 28-page manuscript is within the 20-35 page range.
+- [x] Check every figure and table at final printed width.
 - [x] Verify that no table contains vertical rules or shading.
 - [ ] Submit `Highlights_PR.txt` as an editable file with a filename containing
       "Highlights".
 - [ ] Upload figures separately and retain captions in the manuscript.
 - [ ] Upload the cover letter and supplementary source files.
-- [ ] Confirm the final PDF generated from source, because a PDF alone is not
+- [x] Confirm the final PDF generated from source, because a PDF alone is not
       an accepted source file.

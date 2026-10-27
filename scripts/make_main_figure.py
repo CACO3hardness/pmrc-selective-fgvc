@@ -17,9 +17,16 @@ from matplotlib.colors import LinearSegmentedColormap
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_ROOT = PROJECT_ROOT.parent.parent / "outputs"
-SUMMARY_PATH = OUTPUT_ROOT / "results_summary_latest.json"
-FIGURE_ROOT = OUTPUT_ROOT / "figures"
+if (PROJECT_ROOT / "paper").is_dir():
+    FIGURE_ROOT = PROJECT_ROOT / "paper" / "figures"
+    SOURCE_DATA_ROOT = PROJECT_ROOT / "source_data"
+    SUMMARY_PATH = PROJECT_ROOT / "supplementary_data" / "results_summary_latest.json"
+else:
+    OUTPUT_ROOT = PROJECT_ROOT.parent.parent / "outputs"
+    FIGURE_ROOT = OUTPUT_ROOT / "figures"
+    SOURCE_DATA_ROOT = OUTPUT_ROOT / "source_data"
+    SUMMARY_PATH = OUTPUT_ROOT / "results_summary_latest.json"
+SUMMARY_PATH = Path(os.environ.get("PMRC_RESULTS_JSON", SUMMARY_PATH))
 
 skill_scripts = os.environ.get("NATURE_FIGURE_SCRIPTS")
 if skill_scripts:
@@ -145,7 +152,7 @@ def selected_groups(rows: list[dict]) -> list[tuple[str, list[dict]]]:
 
 
 def write_source_data(rows: list[dict], groups: list[tuple[str, list[dict]]]) -> None:
-    path = FIGURE_ROOT / "figure1_source_data.csv"
+    path = SOURCE_DATA_ROOT / "figure1_source_data.csv"
     with path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
@@ -381,7 +388,11 @@ def plot_panel_b(ax: plt.Axes, groups: list[tuple[str, list[dict]]]) -> None:
     panel_label(ax, "b")
 
 
-def plot_panel_c(ax: plt.Axes, rows: list[dict]) -> None:
+def plot_panel_c(
+    ax: plt.Axes,
+    rows: list[dict],
+    panel_letter: str = "c",
+) -> None:
     by_name = {row["run_name"]: row for row in rows}
     field_names = [
         ("temperature_scaling_aurc", "Temperature"),
@@ -450,10 +461,14 @@ def plot_panel_c(ax: plt.Axes, rows: list[dict]) -> None:
     colorbar.set_label("AURC minus PMRC AURC", fontsize=6.8)
     colorbar.ax.tick_params(labelsize=6.2)
     ax.set_title("Comparison with post-hoc baselines", loc="left", pad=9)
-    panel_label(ax, "c")
+    panel_label(ax, panel_letter)
 
 
-def plot_panel_d(ax: plt.Axes, rows: list[dict]) -> None:
+def plot_panel_d(
+    ax: plt.Axes,
+    rows: list[dict],
+    panel_letter: str = "d",
+) -> None:
     group_order = [
         ("CUB\nR50", lambda row: row["dataset"] == "cub" and row["model"] == "resnet50" and row["method"] == "elr" and row["noise_kind"] != "clean"),
         ("CUB\nR18", lambda row: row["dataset"] == "cub" and row["model"] == "resnet18"),
@@ -503,7 +518,7 @@ def plot_panel_d(ax: plt.Axes, rows: list[dict]) -> None:
     ax.set_ylim(0.48, 0.86)
     ax.grid(axis="y", color="#E5E7E9", linewidth=0.5)
     ax.set_title("Prototype margin beyond confidence", loc="left", pad=9)
-    panel_label(ax, "d")
+    panel_label(ax, panel_letter)
 
 
 def main() -> None:
@@ -613,8 +628,8 @@ def main() -> None:
         figsize=(figure_width_in, 72 / 25.4),
         constrained_layout=True,
     )
-    plot_panel_c(mechanism_axes[0], rows)
-    plot_panel_d(mechanism_axes[1], rows)
+    plot_panel_c(mechanism_axes[0], rows, panel_letter="a")
+    plot_panel_d(mechanism_axes[1], rows, panel_letter="b")
     mechanism_figure.canvas.draw()
     mechanism_layout = matplotlib_layout_manifest(mechanism_figure)
     (FIGURE_ROOT / "figure1_pmrc_mechanism.alignment-layout.json").write_text(

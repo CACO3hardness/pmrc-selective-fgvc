@@ -6,3 +6,11 @@ runs/
 *.whl
 __pycache__/
 *.pyc
+paper/figures/*.alignment-layout.json
+paper/figures/*.alignment.json
+paper/figures/*.alignment.svg
+paper/figures/*.collision-audit.json
+paper/figures/*.collision-audit.pdf
+paper/figures/figure1_pmrc.png
+paper/figures/figure1_pmrc.svg
+paper/figures/figure1_pmrc.tiff

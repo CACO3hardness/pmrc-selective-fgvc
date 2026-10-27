@@ -14,12 +14,27 @@ b,CUB40,ce_resnet50_cub_semantic40_seed0,0,risk90_reduction_percentage_points,0.
 a,CUB40,elr_resnet50_cub_semantic40_seed0,0,msp_aurc,0.20764124257679029,,
 a,CUB40,elr_resnet50_cub_semantic40_seed0,0,pmrc_aurc,0.16428290350469274,,
 b,CUB40,elr_resnet50_cub_semantic40_seed0,0,risk90_reduction_percentage_points,0.7861936720997109,,
+a,CUB40,gce_resnet50_cub_semantic40_seed0,0,msp_aurc,0.20756706394614582,,
+a,CUB40,gce_resnet50_cub_semantic40_seed0,0,pmrc_aurc,0.16790728067788627,,
+b,CUB40,gce_resnet50_cub_semantic40_seed0,0,risk90_reduction_percentage_points,0.5369127516778482,,
+a,CUB40,ce_resnet50_cub_semantic40_seed1,1,msp_aurc,0.2554291490592761,,
+a,CUB40,ce_resnet50_cub_semantic40_seed1,1,pmrc_aurc,0.22306103618872364,,
+b,CUB40,ce_resnet50_cub_semantic40_seed1,1,risk90_reduction_percentage_points,0.6903163950143787,,
 a,CUB40,elr_resnet50_cub_semantic40_seed1,1,msp_aurc,0.22105538342260542,,
 a,CUB40,elr_resnet50_cub_semantic40_seed1,1,pmrc_aurc,0.19517782206500248,,
 b,CUB40,elr_resnet50_cub_semantic40_seed1,1,risk90_reduction_percentage_points,0.5369127516778482,,
+a,CUB40,gce_resnet50_cub_semantic40_seed1,1,msp_aurc,0.2067828202592664,,
+a,CUB40,gce_resnet50_cub_semantic40_seed1,1,pmrc_aurc,0.17334216179269518,,
+b,CUB40,gce_resnet50_cub_semantic40_seed1,1,risk90_reduction_percentage_points,0.6519654841802502,,
+a,CUB40,ce_resnet50_cub_semantic40_seed2,2,msp_aurc,0.23355884133009713,,
+a,CUB40,ce_resnet50_cub_semantic40_seed2,2,pmrc_aurc,0.1847705260745332,,
+b,CUB40,ce_resnet50_cub_semantic40_seed2,2,risk90_reduction_percentage_points,1.5723873441994274,,
 a,CUB40,elr_resnet50_cub_semantic40_seed2,2,msp_aurc,0.20395189494820812,,
 a,CUB40,elr_resnet50_cub_semantic40_seed2,2,pmrc_aurc,0.17120172210119233,,
 b,CUB40,elr_resnet50_cub_semantic40_seed2,2,risk90_reduction_percentage_points,0.9587727708533111,,
+a,CUB40,gce_resnet50_cub_semantic40_seed2,2,msp_aurc,0.21277546385890336,,
+a,CUB40,gce_resnet50_cub_semantic40_seed2,2,pmrc_aurc,0.17630480026692205,,
+b,CUB40,gce_resnet50_cub_semantic40_seed2,2,risk90_reduction_percentage_points,0.7861936720997109,,
 a,CUBS40,ce_resnet50_cub_symmetric40_seed0,0,msp_aurc,0.19904106569943297,,
 a,CUBS40,ce_resnet50_cub_symmetric40_seed0,0,pmrc_aurc,0.1689166189013554,,
 b,CUBS40,ce_resnet50_cub_symmetric40_seed0,0,risk90_reduction_percentage_points,0.6903163950143842,,
@@ -107,6 +122,8 @@ c,CIFAR100N R18,elr_resnet18_cifar100n_human_seed0,0,MaxLogit-pNorm_minus_pmrc_a
 c,CIFAR100N R18,elr_resnet18_cifar100n_human_seed0,0,KNN agreement_minus_pmrc_aurc,0.020986662256958055,,
 c,CIFAR100N R18,elr_resnet18_cifar100n_human_seed0,0,Trust Score_minus_pmrc_aurc,0.04900516639951166,,
 d,cub/resnet50/ce,ce_resnet50_cub_semantic40_seed0,0,prototype_within_msp_auc,0.7700206133429442,0.7559813047277224,0.7833751255636745
+d,cub/resnet50/ce,ce_resnet50_cub_semantic40_seed1,1,prototype_within_msp_auc,0.6989032372615869,0.6835784744012676,0.7141768224144793
+d,cub/resnet50/ce,ce_resnet50_cub_semantic40_seed2,2,prototype_within_msp_auc,0.7836830116674213,0.7692008913644881,0.7971254011284753
 d,cub/resnet50/ce,ce_resnet50_cub_symmetric40_seed0,0,prototype_within_msp_auc,0.7182980542015814,0.7017007687791592,0.735071107888796
 d,cifar100n/resnet18/elr,elr_resnet18_cifar100n_human_seed0,0,prototype_within_msp_auc,0.6654486166838226,0.6517506881810707,0.6796470687122513
 d,cifar100n/resnet18/elr,elr_resnet18_cifar100n_human_seed1,1,prototype_within_msp_auc,0.6564791370371346,0.6409916228801338,0.6706746515647682
@@ -121,6 +138,9 @@ d,aircraft/resnet50/elr,elr_resnet50_aircraft_semantic40_seed0,0,prototype_withi
 d,aircraft/resnet50/elr,elr_resnet50_aircraft_semantic40_seed1,1,prototype_within_msp_auc,0.7095521674568609,0.6867783271956593,0.7282261029685598
 d,aircraft/resnet50/elr,elr_resnet50_aircraft_semantic40_seed2,2,prototype_within_msp_auc,0.7018672317786053,0.6820780381793264,0.7218648057757397
 d,cub/resnet50/elr,elr_resnet50_cub_clean_seed0,0,prototype_within_msp_auc,0.6242536827235942,0.5743536503337815,0.6700550811151972
+d,cub_openset160/resnet50/elr,elr_resnet50_cub_openset160_semantic40_seed0,0,prototype_within_msp_auc,,,
+d,cub_openset160/resnet50/elr,elr_resnet50_cub_openset160_semantic40_seed1,1,prototype_within_msp_auc,,,
+d,cub_openset160/resnet50/elr,elr_resnet50_cub_openset160_semantic40_seed2,2,prototype_within_msp_auc,,,
 d,cub/resnet50/elr,elr_resnet50_cub_semantic20_seed0,0,prototype_within_msp_auc,0.6718380385141771,0.6473350778268578,0.696597182196304
 d,cub/resnet50/elr,elr_resnet50_cub_semantic20_seed1,1,prototype_within_msp_auc,0.6695546289264039,0.6429527862105203,0.6947422427981882
 d,cub/resnet50/elr,elr_resnet50_cub_semantic20_seed2,2,prototype_within_msp_auc,0.6907555758600099,0.663698601171931,0.713914132771466
@@ -136,6 +156,9 @@ d,flowers102/resnet50/elr,elr_resnet50_flowers102_semantic25_seed2,2,prototype_w
 d,flowers102/resnet50/elr,elr_resnet50_flowers102_semantic375_seed0,0,prototype_within_msp_auc,0.7953778569382774,0.7814444887261852,0.8089222518418798
 d,flowers102/resnet50/elr,elr_resnet50_flowers102_semantic375_seed1,1,prototype_within_msp_auc,0.7957585824311175,0.7778913123050116,0.8115656884779155
 d,flowers102/resnet50/elr,elr_resnet50_flowers102_semantic375_seed2,2,prototype_within_msp_auc,0.8068021294646749,0.7873583895058534,0.824620069950808
+d,stanford_dogs/resnet50/elr,elr_resnet50_stanford_dogs_semantic40_seed0,0,prototype_within_msp_auc,0.7983044699518032,0.7752201614220796,0.8203683671297192
+d,stanford_dogs/resnet50/elr,elr_resnet50_stanford_dogs_semantic40_seed1,1,prototype_within_msp_auc,0.7971216098876583,0.7698379759336604,0.8185468796589054
+d,stanford_dogs/resnet50/elr,elr_resnet50_stanford_dogs_semantic40_seed2,2,prototype_within_msp_auc,0.81603759483109,0.7958681936106994,0.8331153122077792
 d,webfg_aircraft/resnet50/elr,elr_resnet50_webfg_aircraft_seed0,0,prototype_within_msp_auc,0.6176202158338925,0.584284809348173,0.6486827834937717
 d,webfg_aircraft/resnet50/elr,elr_resnet50_webfg_aircraft_seed1,1,prototype_within_msp_auc,0.6341484804775835,0.6063005314894955,0.6728278937215451
 d,webfg_aircraft/resnet50/elr,elr_resnet50_webfg_aircraft_seed2,2,prototype_within_msp_auc,0.6473164117527466,0.6176535044713939,0.6787699176737207
@@ -148,3 +171,6 @@ d,webfg_bird/resnet50/elr,elr_resnet50_webfg_bird_seed5,5,prototype_within_msp_a
 d,webfg_car/resnet50/elr,elr_resnet50_webfg_car_seed0,0,prototype_within_msp_auc,0.6202104740208457,0.5898969648194978,0.6459592537661223
 d,webfg_car/resnet50/elr,elr_resnet50_webfg_car_seed1,1,prototype_within_msp_auc,0.5935502717272965,0.5668300640605456,0.6213762237270417
 d,webfg_car/resnet50/elr,elr_resnet50_webfg_car_seed2,2,prototype_within_msp_auc,0.6340219263118974,0.6090116190852535,0.6535723880797347
+d,cub/resnet50/gce,gce_resnet50_cub_semantic40_seed0,0,prototype_within_msp_auc,0.7321305772603754,0.7173272546821818,0.7482797787476678
+d,cub/resnet50/gce,gce_resnet50_cub_semantic40_seed1,1,prototype_within_msp_auc,0.7300865771296805,0.7137902669202723,0.7450346446902649
+d,cub/resnet50/gce,gce_resnet50_cub_semantic40_seed2,2,prototype_within_msp_auc,0.7177260085273959,0.7037968711216588,0.7329071196886235
